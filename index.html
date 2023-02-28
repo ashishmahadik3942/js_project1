@@ -6,8 +6,8 @@
         <div class="box">
             <h1>Lighten/Darken Color</h1>
             <label>Color (Hex)</label>
-            <script src="index.pack.js"></script>
-            <input id="inputColorCode" onchange="checkColor()" type="text">
+            
+            <input id="inputColorCode" type="text">
             <div class="toggle">
                 <label id="light">Lighten</label>
                 <div class="toggleBox">
@@ -16,13 +16,13 @@
                 </div>
                 <label id="dark">Darken</label>
             </div>
-            <label id="persent">50%</label>
-            <input id="range" type="range">
+            <label id="persent">0%</label>
+            <input id="range" type="range" value="0" min="1">
             <label>Input Color</label>
             <div id="inColorBox"></div>
             <label>Altered Color <label id="alterColorCode"></label></label>
             <div id="alterColorBox"></div>
         </div>
-        
+        <script src="index.js"></script>
     </body>
 </html>
