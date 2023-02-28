@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1>Lighten/Darken Color</h1>
+            <label>Color (Hex)</label>
+            <script src="index.pack.js"></script>
+            <input id="inputColorCode" onchange="checkColor()" type="text">
+            <div class="toggle">
+                <label id="light">Lighten</label>
+                <div class="toggleBox">
+                    <input id="toggleBtn" type="checkbox">
+                    <label for="toggleBtn"></label>
+                </div>
+                <label id="dark">Darken</label>
+            </div>
+            <label id="persent">50%</label>
+            <input id="range" type="range">
+            <label>Input Color</label>
+            <div id="inColorBox"></div>
+            <label>Altered Color <label id="alterColorCode"></label></label>
+            <div id="alterColorBox"></div>
+        </div>
+        
+    </body>
+</html>

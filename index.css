@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 15px;
+    background-color: #C6BAFCff;
+}
+
+h1{
+    color: #9FB09Eff;
+    text-align: center;
+    font-weight: 600;
+}
+.box {
+    margin: 20px auto;
+    width: 500px;
+    background-color: #3A4760ff;
+    display: flex;
+    flex-direction:  column;
+    padding: 10px 20px 40px;
+    
+}   
+
+#inputColorCode{
+    border-radius: 4px;
+    border: 1px solid gray;
+    width: 150px;
+    padding: 4px 8px;
+    margin: 12px 0;
+}
+
+#persent{
+    margin: 5px 0 -5px 0;
+}
+#range{
+    width: 100px;
+    height: 6px;
+    margin: 12px 0;
+}
+
+.toggle{
+    display: flex;
+    margin: 12px 0;
+    font-size: 18px;
+}
+.toggleBox{
+    display: flex; 
+    align-items: center; 
+    margin: 0 10px; 
+}
+
+input[type=checkbox] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+label[for=toggleBtn]{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 26px;
+    background: gray;
+    border-radius: 26px;
+}
+
+label[for=toggleBtn]::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 3px;
+    background: #fff;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+input:checked + label[for=toggleBtn] {
+    background: #bada55;
+    color: red;
+}
+
+input:checked + label[for=toggleBtn]:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+
+label[for=toggleBtn]:active:after{
+    width: 35px;
+}
+
+#inColorBox{
+    height: 60px;
+    background-color: #E45456ff;
+    width: 500px;
+    margin: 5px 0px 5px;
+}
+
+#alterColorBox {
+    height: 60px;
+    background-color: #FFABADff;
+    width: 500px;
+    margin: 5px 0px 5px;
+}
