@@ -2,14 +2,12 @@
   "name": "project",
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^2.0",
-    "babel-core": "^6.0",
-    "babel-loader": "^7.0",
-    "babel-preset-env": "*",
-    "babel-preset-react": "*"
+    "vite": "latest"
   },
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack -w"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
